@@ -1,7 +1,11 @@
 body,html{
   margin: 0;
   padding: 0;
-  /*background-image: url('../img/wood.jpg');*/
+  background-image: url('../img/wood.jpg');
+  background-size: 50% 100%;
+  background-position: cover;
+  background-repeat: repeat-x;
+  height: 120%;
 }
 
 h1, h2, h3{
@@ -19,6 +23,7 @@ header{
   z-index: 10;
   width: 100%;
   background-color: rgba(193, 209, 172, 0.35);
+  padding-top: 5px;
 }
 
 header .row .pull-right{
@@ -27,7 +32,7 @@ header .row .pull-right{
 
 .navbar{
   margin-bottom: 0px;
-  background-color: rgba(193, 209, 172, 0.35);
+  background-color: rgba(193, 209, 172, 0.5);
   /*position: absolute;*/
   z-index: 10;
   width: 100%;
