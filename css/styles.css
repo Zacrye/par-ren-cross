@@ -3,8 +3,9 @@ html,body{
   padding: 0;
   background-color: #D1D1D1;
   height: 100%;
-  background-image: url('../img/wood.jpg');
-  background-repeat: repeat-x;
+  background-image: url('../img/black_linen.png');
+  background-repeat: repeat;
+  font-family: 'Crimson Text', sans-serif;
 }
 
 h1,h2,h3{
@@ -118,7 +119,7 @@ hr.small {
 }
 
 #menu-toggle {
-    z-index: 1;
+    z-index: 1000;
     position: fixed;
     top: 0;
     right: 0;
@@ -142,16 +143,39 @@ hr.small {
 /*start of header*/
 header{
   display: flex;
-}
-.header-container{
-  background-color: rgba(193, 209, 172, 0.5);
+  position: absolute;
+  z-index: 1;
   width: 100%;
-  display: flex;
+  background-color: rgba(193, 209, 172, 0.5);
+  color: white;
+}
+header .brand-name{
+  padding-left: 0.35%;
+  /*padding-top: 0.25%;*/
+  display: inline-flex;
+  align-items: flex-end;
+}
+.brand-name h1{
+  padding-bottom: 0.5%;
+}
+.brand-name img{
+  max-width: 6vw;
+  max-height: 6vh;
+  align-self: center;
 }
 header .consultation{
   text-align: right;
+  padding-right: 0.35%;
 }
 /*end of header*/
+
+/*start of carousel*/
+.carousel-img-1{
+  background-image: url('../img/yose-banner.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 75vh;
+}
 
 /*start of comp-only navbar*/
 .navbar-default{
@@ -165,7 +189,9 @@ header .consultation{
 }
 
 .navbar-default .navbar-nav>li>a{
+  /*color: #212021;*/
   color: white;
+  opacity: 0.99;
   font-size: 24px;
   transition: all 0.6s ease;
   padding-right: 25px;
@@ -210,6 +236,27 @@ footer .copyright{
     justify-content: center;
     flex-flow: column wrap;
     height: 100%;
+    background-color: rgba(193, 209, 172, 0);
+  }
+  header .brand-name{
+    background-color: rgba(193, 209, 172, 0.5);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    padding-top: 2%;
+    margin: 0 auto;
+    text-shadow: 2px 1px black;
+  }
+  header .consultation{
+    background-color: rgba(193, 209, 172, 0.5);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    padding: 2% 0;
+    margin: 0 auto;
+    text-shadow: 2px 1px black;
   }
   header h1{
     font-size: 6vw;
@@ -218,6 +265,18 @@ footer .copyright{
   header h2{
     font-size: 6vw;
     text-align: center;
+  }
+  /*end of header*/
+
+  /*start of carousel*/
+  .carousel{
+    height: 100%;
+  }
+  .carousel-inner{
+    height: 100%;
+  }
+  .carousel-img-mobile{
+    height: 100%;
   }
 
   /*start of footer*/
@@ -239,12 +298,6 @@ footer .copyright{
     font-size: 10vw;
   }
   /*end*/
-
-  .hundy{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
 
   /*comp-only and mobile-only section*/
   .mobile-only{
