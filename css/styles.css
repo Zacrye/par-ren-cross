@@ -171,7 +171,8 @@ header .consultation{
 
 /*start of carousel*/
 .carousel-img-1{
-  background-image: url('../img/courtroom.jpg');
+  background-image: url('../img/yose-banner.jpg');
+  /*background-position: -1.4vw -50vh;*/
   background-position: center;
   background-size: cover;
   min-height: 60vh;
@@ -198,10 +199,46 @@ header .consultation{
 }
 /*end of comp-only navbar*/
 
+/*start of about section*/
+#about{
+  color: white;
+  font-size: 1.2vw;
+}
+
+#about .about-header{
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+  padding-top: 2%;
+  font-weight: 700;
+}
+.about-header h2{
+  padding-top: 0.35%;
+}
+
+#about .about-text{
+  background-color: rgba(193, 209, 172, 0.5);
+  padding: 2%;
+  margin-top: 4%;
+}
+
+#about .about-img{
+  margin-top: 4%;
+  margin-left: 13%;
+  /*background-color: rgba(0, 0, 0, 0.5);*/
+  background-color: rgba(193, 209, 172, 0.5);
+  padding: 2% 1%;
+}
+
+/*start of footer*/
 footer{
   text-align: center;
   color: #828282;
-  font-size: 2.5em;
+  font-size: 1.5em;
+  margin-top: 6%;
+  padding: 0.25%;
+  background-color: #292828;
 }
 
 footer .copyright{
@@ -272,11 +309,39 @@ footer .copyright{
   .carousel{
     height: 100%;
   }
+  .carousel-img-1{
+    /*background-position: -72.5vw 0vh;*/
+  }
   .carousel-inner{
     height: 100%;
   }
   .carousel-img-mobile{
     height: 100%;
+  }
+
+  /*start of about*/
+  #about{
+    font-size: 5vw;
+    padding: 0 6%;
+    padding-top: 5%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .about-header{
+    padding-top: 0;
+    text-align: center;
+  }
+  .about-header h2{
+    padding-top: 8%;
+    font-size: 8vw;
+    padding-bottom: 5%;
+  }
+  #about .about-img{
+    margin-left: 0%;
+    max-width: 80vw;
   }
 
   /*start of footer*/
