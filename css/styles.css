@@ -171,10 +171,10 @@ header .consultation{
 
 /*start of carousel*/
 .carousel-img-1{
-  background-image: url('../img/yose-banner.jpg');
+  background-image: url('../img/courtroom.jpg');
   background-position: center;
   background-size: cover;
-  min-height: 75vh;
+  min-height: 60vh;
 }
 
 /*start of comp-only navbar*/
