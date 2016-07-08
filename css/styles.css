@@ -22,6 +22,10 @@ h1,h2,h3{
   justify-content: center;
 }
 
+.active-wrapper{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 .btn-dark {
     border-radius: 0;
     color: #fff;
@@ -64,7 +68,7 @@ hr.small {
     height: 100%;
     margin-right: -250px;
     overflow-y: auto;
-    background: #222;
+    background: rgba(193, 209, 172, 0.95);
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
     -ms-transition: all 0.4s ease 0s;
@@ -89,7 +93,9 @@ hr.small {
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #999;
+    font-size: 5vw;
+    /*color: light_gray;*/
+    /*text-shadow: 1px 1px #274A26;*/
 }
 
 .sidebar-nav li a:hover {
@@ -110,7 +116,9 @@ hr.small {
 }
 
 .sidebar-nav > .sidebar-brand a {
-    color: #999;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
@@ -174,6 +182,14 @@ header .consultation{
   background-image: url('../img/yose-banner.jpg');
   /*background-position: -1.4vw -50vh;*/
   background-position: center;
+  background-size: cover;
+  min-height: 60vh;
+}
+
+.carousel-img-2{
+  background-image: url('../img/vineyard.jpg');
+  /*background-position: -1.4vw -50vh;*/
+  background-position: bottom;
   background-size: cover;
   min-height: 60vh;
 }
@@ -273,7 +289,7 @@ footer .copyright{
     align-items: center;
     justify-content: center;
     flex-flow: column wrap;
-    height: 100%;
+    height: 450px;
     background-color: rgba(193, 209, 172, 0);
   }
   header .brand-name{
@@ -308,7 +324,7 @@ footer .copyright{
 
   /*start of carousel*/
   .carousel{
-    height: 100%;
+    height: 450px;
   }
   .carousel-img-1{
     background-position: 0vw -9vh;
