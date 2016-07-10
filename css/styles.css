@@ -340,7 +340,7 @@ footer .copyright{
 
   /*start of about*/
   #about{
-    font-size: 3.75vw;
+    font-size: 5vw;
     /*font-size: 24px;*/
     padding: 0 6%;
     padding-top: 5%;
@@ -361,7 +361,7 @@ footer .copyright{
   }
   #about .about-img{
     margin-left: 0%;
-    max-width: 80vw;
+    max-width: 90vw;
   }
 
   /*start of footer*/
