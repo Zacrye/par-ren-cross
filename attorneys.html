@@ -9,12 +9,10 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-  	<link rel="stylesheet" href="css/styles.css">
-
-    <!-- google font link -->
-    <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,700' rel='stylesheet' type='text/css'>
-
+    <link rel="stylesheet" href="css/attorneys.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700" rel="stylesheet" type="text/css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -23,17 +21,47 @@
     <![endif]-->
   </head>
   <body>
-    <header class="container-fluid">
-      <div class="row">
-        <div class="col-sm-4">
-          <h1 style="font-weight: bold">Parichan, Renberg & Crossman</h1>
-          <h3>Phone: 559-431-6300</h3>
-        </div>
-        <div class="col-sm-4 pull-right">
-          <h2> <span style="font-weight: bold">Experienced, Aggressive Representation</span><br>Trial lawyers for Central California</h2>
-        </div>
+    <div id="top"></div>
+    <div class="mobile-only">
+      <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+      <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick="$(&quot;#menu-close&quot;).click();">Oliver-Thomas</a>
+            </li>
+            <li>
+                <a href="#top" onclick="$(&quot;#menu-close&quot;).click();">Home</a>
+            </li>
+            <li>
+                <a href="#learn_more" onclick="$(&quot;#menu-close&quot;).click();">About</a>
+            </li>
+            <li>
+                <a href="#services" onclick="$(&quot;#menu-close&quot;).click();">Services</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick="$(&quot;#menu-close&quot;).click();">Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact" onclick="$(&quot;#menu-close&quot;).click();">Contact</a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- END OF MOBILE-ONLY NAV -->
+
+    <header class="header">
+      <div class="brand-name col-lg-6 col-md-6 col-sm-12">
+        <img src="img/scale.png" class="img-responsive comp-only" alt="" />
+        <h1 style="font-weight: bold">Parichan, Renberg &amp; Crossman</h1>
+      </div>
+      <div class="consultation col-lg-6 col-md-6 col-sm-12">
+        <h1 style="font-weight: bold">Free Consultation</h1>
+        <h2>Phone: 559-431-6300</h2>
       </div>
     </header>
+    <!-- END OF HEADER -->
+
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -44,46 +72,130 @@
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
-        <div class="item active" id="slide-1"></div>
-        <div class="item" id="slide-2"></div>
-        <div class="item" id="slide-3"></div>
+        <div class="item active carousel-img-1 carousel-img-mobile">
+          <div class="carousel-caption">
+
+          </div>
+        </div>
       </div>
 
       <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
       <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
-      </a>
+      </a> -->
     </div>
-    <nav class="navbar navbar-light bg-faded">
-      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-      <div class="container">
-        <ul class="nav navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Attorneys</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Area's of Practice</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Representative Cases</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
+    <!-- END OF CAROUSEL -->
+
+    <nav class="navbar navbar-default comp-only" id="learn_more">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="col-sm-12 comp-nav">
+          <div class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav">
+              <li class="index.html"><a href="#top">About Us</a></li>
+              <li><a href="#about">Attorneys</a></li>
+              <li><a href="#about">Areas of Practice</a></li>
+              <li><a href="#about-sub">Repesentative Cases</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
     </nav>
+    <!-- END OF COMP-ONLY NAVBAR -->
+
+    <div class="page" id="attorney">
+      <div class="content attorneys-header">
+        <div class="col-sm-12">
+          <br>
+          <h1>Attorneys</h1>
+          <br>
+        </div>
+        <div class="col-lg-5 col-lg-offset-1 col-sm-12" id="teamPic">
+          <!-- ATTORNEY HEADING IMG -->
+          <img class="img-circle" src="img/vineyard.jpg" alt="photo of team">
+        </div><!--end teamPic-->
+        <div class="col-lg-4 col-sm-12" id="aboutTheTeam">
+          <h3>Meet The Team</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div><!--end trial / flex container-->
+      <br><!--page break-->
+      <br><!--page break-->
+      <div class="lawyers col-sm-12">
+        <div class="col-lg-5 col-sm-12 attorney">
+          <img class="img-circle" src="img/vineyard.jpg" alt="photo of Renberg">
+          <h3>Michael L. Renberg</h3>
+          <div>
+            <p>Michael Renberg is a partner and litigation attorney.  He was raised in Fresno, County and graduated from University of California, Los Angeles with a degree in Politic Science.  Mr. Renberg then attended the University of San Francisco School of Law and graduated with honors.  While at law school he was a member of the Moot Court Board and was selected to be a judicial clerk for David Eagleson of the California Supreme Court.</p>
+
+            <p>After graduation Mr. Renberg was a law clerk for a Federal judge, Robert Coyle of the U.S. District Court, Eastern District of California.  During the clerkship he handled various aspects of court procedures, including preparing jury instructions, reviewing motions, drafting bench memos and assisting the judge with cases.
+            Since 1994 Mr. Renberg has been a litigation attorney with Parichan, Renberg & Crossman.   He handles cases from initial retention, pleadings, and discovery through trial and appeal.</p>
+
+            <p>Mr. Renberg focuses his practice primarily in the areas of personal injury, tort defense, products liability, construction defect litigation, and business litigation.  In particular, he has extensive expertise in cases involving complex medical causation, such as brain injuries, spinal cord injuries and toxic exposure.</p>
+
+            <p>Mr. Renberg also handles mediations for personal injury, business disputes and insurance matters.   He is a judge pro tem with the Fresno County Superior Court and has been appointed by the Tulare County Superior Court to the approved mediator panel.  Mr. Renberg is admitted to practice law in all courts in the State of California, including the Ninth Circuit Court of Appeal, and the U.S. District Courts in the Eastern, Northern, Southern and Central District.</p>
+
+            <p>In addition, he is a frequent seminar speaker on trial tactics, discovery and litigation.  Topics that he has spoken on include:</p>
+              <ul>
+                <li>Emerging Issues in California Indoor Air Quality and Toxic Mold Litigation</li>
+                <li>Advanced Trial Advocacy in California</li>
+                <li>Getting Evidence And Expert Testimony Admitted Into Court</li>
+                <li>Protecting Yourself From Malpractice</li>
+                <li>Dispute resolution and mediation strategies</li>
+                <li>Personal Injury Cases:  Calculating and Proving Damages</li>
+                <li>Personal Injury Trials:  Getting The Most Out of your Evidence</li>
+                <li>Effective Case Presentation at Trial</li>
+                <li>Trial Preparation From Start to Finish for Paralegals</li>
+              </ul>
+          </div>
+        </div><!--attorney-->
+
+        <div class="attorney col-sm-12 col-lg-5">
+          <img class="img-circle" src="img/vineyard.jpg" alt="photo of Crossman">
+          <h3>Richard C. Crossman</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</p>
+        </div><!--end attorney-->
+      </div><!--end flex container-->
+    </div><!--END CONTENT CONTAINER-->
+  </div><!--end attorney page-->
+
+
+    <!-- <footer>
+      <div class="copyright">
+        <p>
+          Powered By &copy;Aeven - Built With Love <span class="fa fa-heart"></span>
+        </p>
+      </div>
+      <div class="sm-icons">
+        <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.tumblr.com"><i class="fa fa-tumblr"></i></a>
+      </div>
+    </footer> -->
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
   </body>
 </html>
