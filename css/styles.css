@@ -250,97 +250,6 @@ header .consultation{
 
 /*start of footer*/
 
-/* start of attorney page*/
-
-.page {
-  margin-bottom: 40px;
-}
-
-.page h1{
-  text-align: center;
-  color: white;
-  /*text-shadow: 0 0 3px white;*/
-  font-size: 350%;
-}
-
-#teamPic img{
-  max-width: 100%;
-  margin-top: 5%;
-  /*border: 3px solid black;*/
-  box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.35), 0px 6px 20px 0px rgba(0, 0, 0, 0.34) !important;
-}
-
-#aboutTheTeam h3{
-  font-size: 169%;
-  text-shadow: 0 0 3px black;
-  margin-top: 3%;
-}
-
-
-#aboutTheTeam {
-  margin-top: 3%;
-  margin-left: 5%;
-  background-color:  rgba(193, 209, 172, 0.5);
-  text-align: center;
-  color: white;
-  font-size: 130%;
-  border: 5px solid black;
-}
-
-#aboutTheTeam p{
-  padding: 15px;;
-}
-
-/*.trial {
-  display: flex;
-  justify-content: center;
-}*/
-
-.lawyers{
-  display: flex;
-  justify-content: center;
-  padding-top: 4%;
-}
-.attorney{
-  background-color: rgba(193, 209, 172, 0.5);
-  padding: 5px;
-  border: 5px solid black;
-  margin: 0 1%;
-}
-
-.attorney h3{
-  margin-top: 10px;
-  padding: 3px;
-  text-align: center;
-  color: white;
-  font-size: 199%;
-  text-shadow: 0 0 3px black;
-}
-
-.attorney img{
-  max-width: 70%;
-  margin-left: 15%;
-  margin-top: 15px;
-  /*border: 3px solid black;*/
-  box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.35), 0px 6px 20px 0px rgba(0, 0, 0, 0.34) !important;
-}
-
-.attorney p{
-  padding: 15px;
-  color: white;
-  font-size: 145%;
-}
-
-.attorney ul{
-  font-weight: bolder;
-  font-size: 120%;
-  color: white;
-}
-
-
-
-/*END ATTORNEY PAGE*/
-
 footer{
   text-align: center;
   color: #828282;
@@ -460,28 +369,8 @@ footer .copyright{
   #about .about-img{
     margin-left: 0%;
     max-width: 90vw;
-  /*start of attorney page*/
-  #aboutTheTeam{
-    margin-left: 0;
-    padding: 0 2%;
   }
-  #teamPic{
-    margin-left: 0;
-  }
-  .attorneys-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-  }
-  .lawyers{
-    flex-flow: column wrap;
-  }
-  .attorney{
-    max-height: 600px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-  }
+  /*end*/
 
   /*start of footer*/
   footer{

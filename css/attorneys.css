@@ -32,11 +32,11 @@
   text-align: center;
   color: white;
   font-size: 130%;
-  border: 5px solid black;
+  /*border: 5px solid black;*/
 }
 
 #aboutTheTeam p{
-  padding: 15px;;
+  padding: 15px;
 }
 
 /*.trial {
@@ -52,7 +52,7 @@
 .attorney{
   background-color: rgba(193, 209, 172, 0.5);
   padding: 5px;
-  border: 5px solid black;
+  /*border: 5px solid black;*/
   margin: 0 1%;
 }
 
@@ -94,6 +94,7 @@
   #aboutTheTeam{
     margin-left: 0;
     padding: 0 2%;
+    margin-top: 10%;
   }
   #teamPic{
     margin-left: 0;
