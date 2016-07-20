@@ -19,6 +19,11 @@
 
 .main-panel-cont .panel-group{
   margin: 0;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
 .main-panel-cont .panel-group .panel{

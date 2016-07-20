@@ -77,5 +77,9 @@
   .contact-form iframe{
     margin-left: 0;
     max-width: 80vw;
+    -webkit-column-width: 80vw;
+    -moz-column-width: 80vw;
+    -ms-column-width: 80vw;
+    -o-column-width: 80vw;
   }
 }
