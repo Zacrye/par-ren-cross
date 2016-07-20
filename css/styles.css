@@ -266,9 +266,9 @@ header .consultation{
   background-position: center;
   background-size: cover;
 }
+/*end of about section*/
 
 /*start of footer*/
-
 footer{
   text-align: center;
   color: #828282;
@@ -301,6 +301,8 @@ footer .copyright{
 .contact-info p {
   padding-top: 3%;
 }
+/*end of footer*/
+
 /*for smaller screens, mobile*/
 @media (max-width: 1200px) {
   #aboutTheTeam{

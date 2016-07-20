@@ -62,6 +62,7 @@
   padding: 5px;
   /*border: 5px solid black;*/
   margin: 0 1%;
+  margin-bottom: 30px;
 }
 
 .attorney h3{
@@ -93,6 +94,63 @@
   color: white;
 }
 
+.attorney .mobile-only{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+/*start of 'read more' buttons*/
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-trigger-cont{
+  box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.35), 0px 6px 20px 0px rgba(0, 0, 0, 0.34) !important;
+  margin-bottom: 5%;
+  border: 2px solid #ddd;
+  border-radius: .25em;
+}
+
+.read-more-state ~ .read-trigger-cont .read-more-trigger:before {
+  content: 'Read More';
+}
+.read-more-state ~ .read-trigger-cont {
+  margin-top: -40%;
+}
+
+.read-more-state:checked ~ .read-trigger-cont .read-more-trigger:before {
+  content: 'Collapse';
+}
+.read-more-state:checked ~ .read-trigger-cont {
+  margin-top: auto;
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #fff;
+  font-size: 1.25em;
+  line-height: 2;
+  /*margin-top: -20%;*/
+}
+
 /*for smaller screens, mobile*/
 @media (max-width: 1200px) {
   #aboutTheTeam{
@@ -116,11 +174,12 @@
   .lawyers{
     flex-flow: column wrap;
   }
-  .attorney{
+  /*.attorney{
     max-height: 600px;
     overflow-x: hidden;
     overflow-y: scroll;
-  }
+  }*/
+}
 
 
 
