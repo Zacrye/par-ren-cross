@@ -179,9 +179,9 @@ header .consultation{
 
 /*start of carousel*/
 .carousel-img-1{
-  background-image: url('../img/yose-banner.jpg');
+  background-image: url('../img/fresno01.jpg');
   /*background-position: -1.4vw -50vh;*/
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   min-height: 60vh;
 }
@@ -190,6 +190,14 @@ header .consultation{
   background-image: url('../img/vineyard.jpg');
   /*background-position: -1.4vw -50vh;*/
   background-position: bottom;
+  background-size: cover;
+  min-height: 60vh;
+}
+
+.carousel-img-3{
+  background-image: url('../img/yose-banner.jpg');
+  /*background-position: -1.4vw -50vh;*/
+  background-position: center;
   background-size: cover;
   min-height: 60vh;
 }
@@ -230,8 +238,11 @@ header .consultation{
   padding-top: 2%;
   font-weight: 700;
 }
+.about-header h1{
+  font-size: 3vw;
+}
 .about-header h2{
-  padding-top: 0.35%;
+  padding-top: 0.65%;
 }
 
 #about .about-text{
@@ -246,6 +257,14 @@ header .consultation{
   /*background-color: rgba(0, 0, 0, 0.5);*/
   background-color: rgba(193, 209, 172, 0.5);
   padding: 2% 1%;
+}
+
+#about .about-img-2{
+  min-height: 76vh;
+  min-width: 100%;
+  background-image: url('../img/courtroom.png');
+  background-position: center;
+  background-size: cover;
 }
 
 /*start of footer*/
@@ -282,11 +301,16 @@ footer .copyright{
 .contact-info p {
   padding-top: 3%;
 }
-@media (max-width: 1024px){
 /*for smaller screens, mobile*/
 @media (max-width: 1200px) {
   #aboutTheTeam{
     margin-left: 0;
+  }
+  .about-header h1{
+    font-size: 4.5vw;
+  }
+  .about-header h2{
+    padding-top: 1.55%;
   }
 }
 @media (max-width: 968px){
@@ -356,19 +380,23 @@ footer .copyright{
     justify-content: center;
     align-items: center;
     align-content: center;
+    padding-bottom: 5%;
   }
   .about-header{
     padding-top: 0;
     text-align: center;
   }
   .about-header h2{
-    padding-top: 8%;
-    font-size: 8vw;
-    padding-bottom: 5%;
+    padding-top: 1%;
+    /*font-size: 8vw;*/
+    /*padding-bottom: 5%;*/
   }
   #about .about-img{
     margin-left: 0%;
     max-width: 90vw;
+  }
+  #about .about-img-2{
+    min-width: 80vw;
   }
   /*end*/
 
@@ -401,4 +429,24 @@ footer .copyright{
     display: none;
   }
   /*end*/
+}
+
+@media (max-width: 768px) {
+  .about-header h1{
+    font-size: 10vw;
+  }
+  .about-header h2{
+    padding-top: 8%;
+    min-width: 100%;
+    font-size: 7vw;
+  }
+  #about .about-img-2{
+    min-height: 40vh;
+  }
+}
+
+@-moz-document url-prefix() {
+  #about .about-header{
+    padding-top: 30px;
+  }
 }

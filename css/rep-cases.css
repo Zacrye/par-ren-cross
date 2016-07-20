@@ -1,5 +1,6 @@
 #rep-cases-container{
   padding: 5%;
+  padding-top: 2%;
   display: flex;
   justify-content: center;
 }
@@ -7,6 +8,13 @@
 #rep-cases-container .main-panel-cont{
   background-color: rgba(193, 209, 172, 0.5);
   padding: 2% 2%;
+}
+
+@-moz-document url-prefix() {
+    #rep-cases-container .main-panel-cont{
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
 }
 
 .main-panel-cont .panel-group{
@@ -28,8 +36,8 @@
 
 .main-panel-cont .panel-group .panel-body{
   /*color: #E3E2DF;*/
-  color: #274A26;
-  text-shadow: 1px 1px white;
+  color: white;
+  text-shadow: 1px 2px #274A26;
   font-size: 20px;
 }
 

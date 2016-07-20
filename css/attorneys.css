@@ -47,8 +47,16 @@
 .lawyers{
   display: flex;
   justify-content: center;
-  padding-top: 4%;
+  padding-top: 1%;
 }
+
+.attorneys-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
 .attorney{
   background-color: rgba(193, 209, 172, 0.5);
   padding: 5px;
