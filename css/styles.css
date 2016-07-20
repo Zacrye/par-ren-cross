@@ -189,7 +189,7 @@ header .consultation{
 .carousel-img-2{
   background-image: url('../img/vineyard.jpg');
   /*background-position: -1.4vw -50vh;*/
-  background-position: bottom;
+  background-position: center;
   background-size: cover;
   min-height: 60vh;
 }
@@ -358,9 +358,19 @@ footer .copyright{
     height: 450px;
   }
   .carousel-img-1{
+    /*background-position: 0vw -9vh;*/
+    background-size: 350% 100%;
+    background-position: center;
+  }
+  .carousel-img-2{
+    /*background-position: 0vw -9vh;*/
+    background-size: 320% 100%;
+    background-position: center;
+  }
+  .carousel-img-3{
     background-position: 0vw -9vh;
     background-size: 250% 150%;
-    /*background-position: top;*/
+    background-position: top;
   }
   .carousel-inner{
     height: 100%;
